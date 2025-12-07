@@ -19,7 +19,8 @@ El objetivo es resolver el problema de **Optimización de Carteras de Markowitz*
 * **Simulación Cuántica:** Motor físico propio (`IsingEvolver`) basado en `quimb` para simular la evolución adiabática y analizar la estabilidad del sistema.
 * **Análisis de Complejidad:** Estudio de la densidad de estados y el Gap Espectral para evaluar la ventaja cuántica potencial.
 
-##  Estructura del Repositorio
+## 🛠️ Estructura del Repositorio
+```text
 .
 ├── notebooks/                  # Jupyter Notebooks con la demo completa
 │   └── 01_Demo_Completa_TFG.ipynb
@@ -30,6 +31,7 @@ El objetivo es resolver el problema de **Optimización de Carteras de Markowitz*
 ├── img/                        # Gráficas generadas
 ├── requirements.txt            # Dependencias del proyecto
 └── README.md                   # Documentación principal
+```
 
 ##  Instalación y Uso
 
