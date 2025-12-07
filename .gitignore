@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Entornos Virtuales
+venv/
+env/
+.env
+.venv/
+
+# Datos
+*.csv
+*.xlsx
+*.json
+data/
+
+# Imágenes generadas (opcional, si no quieres versionarlas)
+# img/
+
+# IDEs
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
