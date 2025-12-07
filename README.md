@@ -96,7 +96,7 @@ Se analiza la evolución adiabática del Hamiltoniano $H(t)$ para caracterizar l
 
 2.  **Transición a Vidrio de Espín y Escala Logarítmica:**
     * **Análisis Lineal:** En una escala de tiempo lineal, observamos la evolución general del sistema. Sin embargo, esta vista pierde detalle en la región crítica final donde ocurre la localización de la solución.
-    * **Análisis Logarítmico (El Régimen *Spin Glass*):** Para resolver esto, aplicamos una transformación logarítmica $ x = \log(1-s) $ que nos permite hacer "zoom" en el final del *annealing* ($s \to 1$). Es aquí donde la competencia entre las múltiples restricciones genera **frustración magnética**, llevando al sistema a una fase de **Vidrio de Espín (*Spin Glass*)**.
+    * **Análisis Logarítmico (El Régimen *Spin Glass*):** Para resolver esto, aplicamos una transformación logarítmica $ x \sim \log(1-s) $ que nos permite hacer "zoom" en el final del *annealing* ($s \to 1$). Es aquí donde la competencia entre las múltiples restricciones genera **frustración magnética**, llevando al sistema a una fase de **Vidrio de Espín (*Spin Glass*)**.
     * En este régimen desordenado, el **Gap Espectral** se cierra abruptamente y emergen las soluciones cuánticas óptimas, que corresponden a los estados de mínima energía "congelados" en este paisaje rugoso.
 
 ![Gap Espectral](img/gap.png)
