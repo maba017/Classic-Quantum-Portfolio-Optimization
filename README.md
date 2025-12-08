@@ -16,7 +16,7 @@ El objetivo es resolver el problema de **Optimización de Carteras de Markowitz*
 * **Datos Reales:** Descarga y procesamiento automático de datos de mercado (Yahoo Finance).
 * **Modelo QUBO:** Formulación matemática del problema financiero con codificación logarítmica de variables (ahorro exponencial de qubits).
 * **Solvers Clásicos:** Implementación de *Simulated Annealing* para encontrar la Frontera Eficiente.
-* **Simulación Cuántica:** Motor físico propio (`IsingEvolver`) basado en `quimb` para simular la evolución adiabática y analizar la estabilidad del sistema.
+* **Simulación Cuántica:** Motor físico propio (`IsingEvolver`) para simular la evolución adiabática mediante la diagonalización del Hamiltoniano total.
 * **Análisis de Complejidad:** Estudio de la densidad de estados y el Gap Espectral para evaluar la ventaja cuántica potencial.
 
 ## 🛠️ Estructura del Repositorio
@@ -27,7 +27,7 @@ El objetivo es resolver el problema de **Optimización de Carteras de Markowitz*
 ├── src/                        # Código fuente modular
 │   ├── qubo_model.py           # Formulación matemática (Finanzas -> Ising)
 │   ├── solvers.py              # Solvers clásicos (Simulated Annealing / Exact)
-│   └── quantum_dynamics.py     # Motor de simulación cuántica (Quimb)
+│   └── quantum_dynamics.py     # Motor de simulación cuántica 
 ├── img/                        # Gráficas generadas
 ├── requirements.txt            # Dependencias del proyecto
 └── README.md                   # Documentación principal
@@ -40,7 +40,7 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 1.  **Descargar el código:**
     Abre una terminal y clona este repositorio:
     ```bash
-    git clone [https://github.com/tu-usuario/TFG-Quantum-Finance.git](https://github.com/tu-usuario/TFG-Quantum-Finance.git)
+    git clone [https://github.com/tu-usuario/Classic-Quantum-Portfolio-Optimization.git](https://github.com/tu-usuario/Classic-Quantum-Portfolio-Optimization.git)
     cd TFG-Quantum-Finance
     ```
 
@@ -95,7 +95,7 @@ Se analiza la evolución adiabática del Hamiltoniano $H(t)$ para caracterizar l
     Dados los valores de los coeficientes del problema financiero (donde penalizamos las correlaciones positivas entre activos y buscamos diversificación), los acoplamientos resultan predominantemente positivos ($J_{ij} > 0$). Esto define un comportamiento inicial **antiferromagnético**, donde los espines tienden a alinearse en sentidos opuestos para minimizar la energía, favoreciendo la competencia entre activos.
 
 2.  **Transición a Vidrio de Espín y Escala Logarítmica:**
-    * **Análisis Lineal:** En una escala de tiempo lineal, observamos la evolución general del sistema. Sin embargo, esta vista pierde detalle en la región crítica final donde ocurre la localización de la solución.
+    * **Análisis Lineal:** En una escala de evolución lineal, observamos la evolución general del sistema. Sin embargo, esta vista pierde detalle en la región crítica final donde ocurre la localización de la solución.
     * **Análisis Logarítmico (El Régimen *Spin Glass*):** Para resolver esto, aplicamos una transformación logarítmica *x* ~ log(1-*s*) que nos permite hacer "zoom" en el final del *annealing* ($s \to 1$). Es aquí donde la competencia entre las múltiples restricciones genera **frustración magnética**, llevando al sistema a una fase de **Vidrio de Espín (*Spin Glass*)**.
     * En este régimen desordenado, el **Gap Espectral** se cierra abruptamente y emergen las soluciones cuánticas óptimas, que corresponden a los estados de mínima energía "congelados" en este paisaje rugoso.
 
