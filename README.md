@@ -89,7 +89,8 @@ Esta visualización muestra el resultado de la ejecución del algoritmo de *Simu
 
 ### 2. Dinámica del Gap Espectral y Fases Magnéticas
 
-Se analiza la evolución adiabática del Hamiltoniano $H(t)$ para caracterizar las transiciones de fase del sistema, relacionando la física del modelo de Ising con la estructura del problema financiero.
+Se analiza la evolución adiabática del Hamiltoniano $H(t)$ para caracterizar las transiciones de fase del sistema, relacionando la física del modelo de Ising con la estructura del problema financiero. 
+La simulación de la "evolución adiabática" se realiza mediante la resolución de **estados estáticos** ("snapshots"), no resolvemos la ecuación de ondas dependiente del tiempo. En su lugar, diagonalizamos Hamiltonianos fijos que representan una mezcla entre el problema y el campo transversal para distintos valores de $s$. Asumimos que el sistema tiene tiempo "infinito" para estabilizarse en su estado fundamental en cada paso de la mezcla.
 
 1.  **Régimen Antiferromagnético (Inicio):**
     Dados los valores de los coeficientes del problema financiero (donde penalizamos las correlaciones positivas entre activos y buscamos diversificación), los acoplamientos resultan predominantemente positivos ($J_{ij} > 0$). Esto define un comportamiento inicial **antiferromagnético**, donde los espines tienden a alinearse en sentidos opuestos para minimizar la energía, favoreciendo la competencia entre activos.
